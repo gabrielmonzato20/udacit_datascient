@@ -44,11 +44,11 @@ input("Press Enter to continue...")
 
 print("\nTASK 2: Printing the genders of the first 20 samples")
 #make a for in range of 20 and print the number of row and the data,+1 is to dont accep the header and -2 is to take the gender column
-for c in range(20):
-    if data_list[c+1][-2] != "":
-        print(f"{c+1}-{data_list[c+1][-2]}")
+for index in range(20):
+    if data_list[index+1][-2] != "":
+        print(f"{index+1}-{data_list[index+1][-2]}")
     else:
-        print(f"{c+1}-None")
+        print(f"{index+1}-None")
 
 
 # Cool! We can get the rows(samples) iterating with a for and the columns(features) by index.
@@ -157,6 +157,8 @@ def most_popular_gender(data_list):
         answer = "Male"
     elif data[0]< data[1]:
         answer = "Famele"
+    else:
+    	answer = "Equal"
     return answer
 
 
