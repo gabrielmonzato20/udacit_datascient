@@ -95,8 +95,7 @@ for data in column_to_list(data_list,-2):
     if data == "Male":
         male+=1
     # #if data is igual to famale so famale is igual a itself plus 1
-    else:
-        if data == "Female":
+    elif data == "Female":
             female+=1
 
 
@@ -122,12 +121,12 @@ def count_gender(data_list):
     """
     male = 0
     female = 0
-    for c in column_to_list(data_list,-2):
+    for gender in column_to_list(data_list,-2):
            #if data is igual to male so male is igual a itself plus 1
-           if c == "Male":
+           if gender == "Male":
                male+=1
                 # #if data is igual to famale so famale is igual a itself plus 1
-           elif c == "Female":
+           elif gender == "Female":
                     female+=1
 
 
@@ -218,7 +217,7 @@ input("Press Enter to continue...")
 male, female = count_gender(data_list)
 print("\nTASK 8: Why the following condition is False?")
 print("male + female == len(data_list):", male + female == len(data_list))
-answer = "The codition is false because the length of data_list count the header and count_gender dont count the header."
+answer = "The codition is false because the length of data_list count the header and count_gender dont count the header and in dataset has some rows that dont have genter and male+famale dont count this."
 print("Answer:", answer)
 
 # ------------ DO NOT CHANGE ANY CODE HERE ------------
