@@ -217,7 +217,7 @@ input("Press Enter to continue...")
 male, female = count_gender(data_list)
 print("\nTASK 8: Why the following condition is False?")
 print("male + female == len(data_list):", male + female == len(data_list))
-answer = "The codition is false because the length of data_list count the header and count_gender dont count the header and in dataset has some rows that dont have genter and male+famale dont count this."
+answer = "The codition is false because the length of data_list count the header and count_gender dont count the header and len count blancks rows."
 print("Answer:", answer)
 
 # ------------ DO NOT CHANGE ANY CODE HERE ------------
