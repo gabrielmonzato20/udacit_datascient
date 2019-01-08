@@ -185,8 +185,11 @@ input("Press Enter to continue...")
 # TASK 7
 # TODO: Plot a similar graph for user_types. Make sure the legend is correct.
 def count_types(data_list):
-    """this function count how many of each gender has in a dataset take just one parament:
-    data_list -- the dataset"""
+    """this function count how many of each gender has in a dataset 
+    Args:
+    data_list : the dataset that will be analiyst
+    Return:
+    count how many of each type has in data_set"""
     sub = 0
     cos = 0
     for c in data_list:
