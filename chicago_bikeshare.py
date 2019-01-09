@@ -150,7 +150,11 @@ input("Press Enter to continue...")
 # We expect to see "Male", "Female" or "Equal" as answer.
 def most_popular_gender(data_list):
     """this function return the most popular gender
-    it take one parament ,the dataset, nd use oder function make in last exercese """""
+        Args:
+         data_Set: the dataset that will be analyst
+         Return:
+         The most popular gender
+         """""
     data = count_gender(data_list)
     if data[0] >data[1]:
         answer = "Male"
@@ -185,21 +189,21 @@ input("Press Enter to continue...")
 # TASK 7
 # TODO: Plot a similar graph for user_types. Make sure the legend is correct.
 def count_types(data_list):
-    """this function count how many of each gender has in a dataset 
+    """this function count how many of each types has in a dataset 
     Args:
     data_list : the dataset that will be analiyst
     Return:
     count how many of each type has in data_set"""
-    sub = 0
-    cos = 0
-    for c in data_list:
+    subscriber = 0
+    costumer = 0
+    for kind in data_list:
            #if data is igual to male so male is igual a itself plus 1
-           if c == "Subscriber":
-               sub+=1
+           if kind == "Subscriber":
+               subscriber+=1
                 # #if data is igual to famale so famale is igual a itself plus 1
-           elif c == "Customer":
+           elif costumer == "Customer":
                     cos+=1
-    return [sub, cos]
+    return [subscriber, costumer]
 print("\nTASK 7: Check the chart!")
 user_types = column_to_list(data_list,5)
 types = ["Subscriber","Customer"]
